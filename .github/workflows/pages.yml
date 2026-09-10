@@ -2,7 +2,7 @@ name: Deploy game to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, jsjakakqkdkwkwk-tactical-fps-vertical-slice]
   workflow_dispatch:
 
 permissions:

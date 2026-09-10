@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sector Nexo - Prototipo FPS táctico</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="hud" class="hidden">
+      <div class="topbar">
+        <div><strong id="round">RONDA 1</strong><span id="phase">PREPARACIÓN</span></div>
+        <div id="score">ALFA 0 — OMEGA 0</div>
+        <div id="credits">$800</div>
+      </div>
+      <div id="objective" class="objective">Busca el dispositivo y colócalo en un sitio marcado.</div>
+      <div id="status"></div>
+      <div id="crosshair"><i></i><i></i><i></i><i></i><b></b></div>
+      <div class="bottom">
+        <div class="health"><span id="health">100</span> HP</div>
+        <div class="ammo"><span id="ammo">12</span> / ∞</div>
+        <div class="weapon">VIGIL-12 <small>PISTOLA</small></div>
+      </div>
+      <div id="buy" class="panel hidden">
+        <h2>ARMERÍA DE CAMPO</h2>
+        <p>Dinero disponible: <b id="buyCredits">$800</b></p>
+        <button data-buy="armor">Chaleco + casco <b>$600</b></button>
+        <button data-buy="rifle">Rifle automático <b>$1,600</b></button>
+        <button data-buy="medkit">Botiquín <b>$400</b></button>
+        <p class="hint">Pulsa B para cerrar · el entrenamiento no consume créditos</p>
+      </div>
+      <div id="help" class="panel">
+        <h2>SECTOR NEXO</h2>
+        <p>Infiltra, coloca el dispositivo y controla la zona.</p>
+        <p><b>WASD</b> mover · <b>SHIFT</b> correr · <b>ESPACIO</b> saltar<br>
+          <b>Mouse</b> apuntar/disparar · <b>R</b> recargar · <b>E</b> interactuar<br>
+          <b>B</b> comprar · <b>T</b> entrenamiento · <b>ESC</b> liberar cursor</p>
+        <button id="start">ENTRAR EN OPERACIÓN</button>
+      </div>
+    </div>
+    <div id="toast"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
